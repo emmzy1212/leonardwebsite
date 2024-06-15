@@ -1,0 +1,519 @@
+        /* Container Styles */
+        .exhibition-one .container {
+            padding: 20px;
+            max-width: 1000px; /* Increase the width of the carousel */
+        }
+
+        /* Exhibition Item Styles */
+        .exhibition-one__single {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            width: 100%;
+            max-width: 500px; /* Increase the width of the items */
+        }
+
+        /* Hover Effects */
+        .exhibition-one__single:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Image Styles */
+        .exhibition-one__image img {
+            width: 100%;
+            height: 300px; /* Set a larger height for the images */
+            object-fit: cover;
+            border-bottom: 1px solid #e0e0e0;
+            transition: transform 0.3s ease;
+        }
+
+        /* Content Styles */
+        .exhibition-one__content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Title Styles */
+        .exhibition-one__content h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            transition: color 0.3s ease;
+        }
+
+        /* Date Styles */
+        .exhibition-one__content p {
+            font-size: 1.1em;
+            color: #757575;
+        }
+
+        /* Hover Effects for Titles */
+        .exhibition-one__single:hover .exhibition-one__content h3 {
+            color: #ff6b6b;
+        }
+
+        /* Hover Effects for Images */
+        .exhibition-one__single:hover .exhibition-one__image img {
+            transform: scale(1.05);
+        }
+
+        /* Additional Block Title Styles */
+        .block-title-two__line {
+            display: inline-block;
+            width: 50px;
+            height: 2px;
+            background-color: #ff6b6b;
+            margin-bottom: 10px;
+        }
+
+        .block-title-two p {
+            font-size: 1em;
+            color: #757575;
+        }
+
+        .block-title-two h3 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        /* Carousel Controls */
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #333;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+
+        .about-one {
+            border: 2px solid #ddd; /* Light gray border */
+            
+            padding: 20px; /* Spacing inside the border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+        }
+
+        .about-one:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+            border-color: #aaa; /* Darker border color on hover */
+            transform: scale(1.02); /* Slightly enlarge on hover */
+        }
+
+        .about-one__highlighted-text {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-one__highlighted-text:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+        .about-one__highlighted-text p {
+            margin: 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        
+
+        .about-one__feature {
+            background-color: #0e0e0e; /* Dark background color */
+            padding: 30px; /* Adjust padding as needed */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Box shadow with transition */
+            transition: box-shadow 0.3s ease; /* Smooth transition for box shadow */
+        }
+    
+        .about-one__feature:hover {
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.8); /* Increase shadow on hover */
+        }
+    
+        .about-one__feature h3 {
+            color: #fff; /* White text color for headings */
+        }
+    
+        .about-one__feature p {
+            color: #fff; /* White text color for paragraphs */
+        }
+    
+        /* Styling for the list items */
+        .about-one__feature-list li {
+            color: #fff; /* White text color for list items */
+        }
+
+        .block-title {
+            background-color: #000; /* black background */
+            color: #fff; /* white text */
+            padding: 20px; /* padding for spacing inside the block */
+            box-shadow: 0 0 10px rgba(0,0,0,0.5); /* box shadow for a subtle depth effect */
+            transition: all 0.3s ease; /* smooth transition for hover effects */
+            position: relative; /* ensure the animation works correctly */
+        }
+        
+        .block-title:hover {
+            transform: scale(1.05); /* scale up slightly on hover */
+            box-shadow: 0 0 20px rgba(0,0,0,0.8); /* increase box shadow on hover for depth */
+        }
+        
+        .block-title p {
+            margin-bottom: 10px; /* space between paragraphs */
+        }
+        
+        .block-title h4 {
+            font-size: 1.2em; /* adjust as needed */
+            font-weight: normal; /* if needed, adjust font weight */
+        }
+        
+        /* Animation example */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .block-title {
+            animation: fadeIn 0.5s ease; /* fade-in animation */
+        }
+        
+
+        .block-title-two {
+            background-color: black; /* Dark background color */
+            padding: 20px; /* Adjust padding as needed */
+            text-align: center; /* Center align text */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow with transition */
+            transition: box-shadow 0.3s ease; /* Smooth transition for box shadow */
+        }
+    
+        .block-title-two:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Shadow on hover */
+        }
+    
+        .block-title-two p {
+            font-size: 18px; /* Example font size */
+            color: #fff; /* Text color */
+            margin-bottom: 5px; /* Adjust spacing */
+        }
+    
+        .block-title-two h3 {
+            font-size: 24px; /* Example font size */
+            color: #fff; /* Text color */
+            font-weight: bold; /* Example font weight */
+            margin: 0; /* Remove default margin */
+        }
+
+        .btn-box {
+            display: inline-block; /* Ensures the container fits the content */
+            overflow: hidden; /* Ensures overflow does not affect the animation */
+            border-radius: 20px; /* Adjust border radius as needed */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adjust box shadow properties */
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        
+        .btn-box:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Adjust box shadow on hover */
+            transform: translateY(-2px); /* Optional: Adds a slight lift effect */
+        }
+        
+        .thm-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #3498db; /* Adjust background color */
+            color: #ffffff; /* Adjust text color */
+            text-decoration: none;
+            border-radius: 20px; /* Match the container's border radius */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .thm-btn:hover {
+            background-color: #2980b9; /* Adjust background color on hover */
+            transform: scale(1.05); /* Optional: Adds a slight scale effect on hover */
+        }
+
+
+        .collection-one {
+            background-color: #1a1a1a;
+            padding: 50px 0;
+        }
+        .collection-one__top {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .block-title p {
+            color: #f0f0f0;
+        }
+        .block-title h3 {
+            color: #fff;
+        }
+        .more-post__link {
+            color: #f0f0f0;
+            border: 2px solid #f0f0f0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .more-post__link:hover {
+            background-color: #f0f0f0;
+            color: #1a1a1a;
+        }
+        .collection-one__single {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        .collection-one__single img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        /* .collection-one__content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            transition: all 0.3s ease;
+        } */
+        .collection-one__single:hover .collection-one__content {
+            background: rgba(0, 0, 0, 0.9);
+        }
+        .collection-one__single:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .collection-one__content h3 a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .collection-one__content h3 a:hover {
+            color: #ff6347;
+        }
+        .side-content__block-about {
+            background-color: #000; /* Black background color */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Box shadow for subtle elevation */
+            border: 1px solid #333; /* Border */
+            border-radius: 8px; /* Rounded corners */
+            transition: all 0.3s ease; /* Smooth transition for hover effect */
+            text-align: center; /* Center align text */
+        }
+        
+        .side-content__block-about:hover {
+            background-color: #111; /* Darkened background color on hover */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Enhanced box shadow on hover */
+            border-color: #555; /* Border color on hover */
+        }
+        
+        .side-content__block__title {
+            color: #fff; /* White title color */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .side-content__block-about__text {
+            color: #ccc; /* Light gray text color */
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .thm-btn.side-content__block-about__btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 25px; /* Rounded button */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        .thm-btn.side-content__block-about__btn:hover {
+            background-color: #555; /* Darker background color on hover */
+            color: #fff; /* White text color on hover */
+        }
+
+
+
+
+
+
+
+        /* Styling for the main navigation */
+.main-nav-one {
+    background-color: #fff; /* Example background color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Box shadow for subtle elevation */
+}
+
+.inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0; /* Adjust padding as needed */
+}
+
+/* Styling for navigation links */
+.main-nav__navigation-box {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav__navigation-box li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between items */
+}
+
+.main-nav__navigation-box li a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #333; /* Link text color */
+    text-decoration: none;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    border: 1px solid transparent; /* Initially transparent border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.main-nav__navigation-box li a:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+    border-color: #ccc; /* Border color on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Box shadow on hover */
+}
+
+/* Animation for the logo */
+.logo-box img {
+    transition: transform 0.3s ease; /* Example animation for logo */
+}
+
+.logo-box img:hover {
+    transform: scale(1.1); /* Example scale effect on hover */
+}
+
+/* Additional styling for other elements as needed */
+
+
+.contact-one {
+    background-color: #000; /* Black background color */
+    padding: 80px 0; /* Adjust padding as needed */
+}
+
+.contact-one__box {
+    background-color: white; /* Dark background color for boxes */
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Box shadow for subtle elevation */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    margin-bottom: 30px; /* Spacing between boxes */
+}
+
+.contact-one__box:hover {
+    transform: translateY(-5px); /* Lift the box on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Enhanced box shadow on hover */
+}
+
+.contact-one__box h3 {
+    font-size: 24px;
+    color: #fff; /* White text color */
+    margin-bottom: 15px;
+}
+
+.contact-one__box p {
+    color: #ccc; /* Light gray text color */
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.contact-one__box-social a {
+    font-size: 20px;
+    color: #fff; /* White social icon color */
+    margin-right: 10px; /* Spacing between social icons */
+    transition: color 0.3s ease; /* Smooth transition for icon color */
+}
+
+.contact-one__box-social a:hover {
+    color: #bbb; /* Darker color on hover */
+}
+
+.contact-form-validated {
+    background-color: white; /* Dark background color for form */
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Box shadow for form */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact-form-validated:hover {
+    transform: translateY(-5px); /* Lift the form on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Enhanced box shadow on hover */
+}
+
+.contact-form-validated input[type="text"],
+.contact-form-validated select,
+.contact-form-validated textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white; /* Darker background color for input fields */
+    border: 1px solid #666; /* Dark border */
+    border-radius: 4px; /* Rounded corners */
+    color: #fff; /* White text color */
+}
+
+.contact-form-validated textarea {
+    min-height: 150px; /* Adjust as needed */
+}
+
+.contact-form-validated input[type="text"]:focus,
+.contact-form-validated select:focus,
+.contact-form-validated textarea:focus {
+    outline: none;
+    border-color: #888; /* Darker border color on focus */
+}
+
+.thm-btn.contact-one__btn {
+    background-color: #fff; /* White button background color */
+    color: #000; /* Black button text color */
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.thm-btn.contact-one__btn:hover {
+    background-color: #000; /* Black background color on hover */
+    color: #fff; /* White text color on hover */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
